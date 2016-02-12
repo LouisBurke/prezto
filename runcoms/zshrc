@@ -11,3 +11,22 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+
+export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
+alias ll='ls -lGa'
+alias pip-clear='pip freeze | xargs pip uninstall -y'
+export WORKON_HOME=~/venvs
+source /usr/local/bin/virtualenvwrapper.sh
+
+set -o vi
+export PATH="/home/louis/.linuxbrew/bin:$PATH"
+export PATH="$HOME/.cabal/bin:$PATH"
+
+export DEVLOCAL='TRUE'
+
+export LOCALDBNAME=localdb
+export LOCALDBUSER=louis
+export LOCALDBPASSWORD='dru55!egend'
+export LOCALDBHOST=127.0.0.1
+export LOCALDBPORT=5432
+export EDITOR=vi
