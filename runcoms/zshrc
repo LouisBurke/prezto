@@ -13,11 +13,20 @@ fi
 # Customize to your needs...
 
 # export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
-export PATH="$PATH:/usr/local/bin/npm_modules"
-export PATH="$PATH:/Users/burkel/chromedriver"
+export PATH="$PATH:/Users/burkel/bin"
+export PATH="$PATH:/Users/burkel/Library/Python/3.6/bin"
+export PATH="$PATH:/Users/burkel/apache-drill-1.10.0/bin"
 alias ll='ls -lGa'
 alias pip-clear='pip freeze | xargs pip uninstall -y'
 
 # set -o vi
 export VISUAL=vi
 export EDITOR=$VISUAL
+
+# Virtualenv Wrapper
+VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME
+source /usr/local/bin/virtualenvwrapper.sh
+
+prompt peepcode █
